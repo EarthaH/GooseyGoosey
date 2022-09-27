@@ -1,8 +1,8 @@
 // For more information on writing tests, see
 // https://scalameta.org/munit/docs/getting-started.html
-import board.Board as board
+import game.Board as board
 
-class DiceSuite extends munit.FunSuite {
+class DiceSpec extends munit.FunSuite {
   test("returns given option[int] as int") {
     val result = board.roll(Some(5))
     val expected = 5
@@ -18,7 +18,7 @@ class DiceSuite extends munit.FunSuite {
   }
 }
 
-class PlaceSuite extends munit.FunSuite {
+class PlaceSpec extends munit.FunSuite {
   val testName = "Bob"
 
   test("win: returns newplace as 63") {
